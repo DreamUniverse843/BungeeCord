@@ -33,6 +33,8 @@ public class CommandAlert extends Command
                 builder.append( ProxyServer.getInstance().getTranslation( "alert" ) );
             }
 
+            builder.append( "[" + sender.getName() + "]" );
+
             for ( String s : args )
             {
                 builder.append( ChatColor.translateAlternateColorCodes( '&', s ) );
